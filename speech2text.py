@@ -135,7 +135,7 @@ if __name__ == '__main__':
                
         
         text = r.recognize_google(audio)
-       
+       #commands 
         r=[text]
         a=['open reader']
         b=['describe']
