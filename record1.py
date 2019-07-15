@@ -60,8 +60,8 @@ def add_silence(snd_data, seconds):
     r.extend(snd_data)
     r.extend([0 for i in range(int(seconds*RATE))])
     return r
-
-def record():
+   
+    
     """
     Record a word or words from the microphone and 
     return the data as an array of signed shorts.
@@ -71,6 +71,8 @@ def record():
     blank sound to make sure VLC et al can play 
     it without getting chopped off.
     """
+def record():
+
     p = pyaudio.PyAudio()
     stream = p.open(format=FORMAT, channels=1, rate=RATE,
         input=True, output=True,
