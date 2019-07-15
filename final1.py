@@ -146,6 +146,7 @@ def ocr():
 
         if r==a :
             print("enjoy your book")
+            #tracing
             engine.say('enjoy your book')
             engine.runAndWait()
             from picamera import PiCamera
@@ -212,3 +213,4 @@ def ocr():
             print ('unknown command')
             engine.say('unknown command')
             engine.runAndWait()
+            
